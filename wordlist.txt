@@ -1,0 +1,10 @@
+www
+admin
+login
+portal
+dashboard
+mail
+api
+test
+dev
+beta
