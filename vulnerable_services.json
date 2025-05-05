@@ -1,4 +1,11 @@
 [
+<<<<<<< HEAD
   "www.chatgpt.com",
   "api.chatgpt.com"
+=======
+    "www.uber.com",
+    "mail.uber.com",
+    "blog.uber.com",
+    "admin.uber.com"
+>>>>>>> 47b53ab3e45a8d8d20e36033453687451703d5e4
 ]

@@ -1,4 +1,5 @@
 www
+<<<<<<< HEAD
 admin
 login
 portal
@@ -8,3 +9,9 @@ api
 test
 dev
 beta
+=======
+mail
+blog
+ftp
+admin
+>>>>>>> 47b53ab3e45a8d8d20e36033453687451703d5e4

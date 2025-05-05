@@ -22,18 +22,21 @@ def main():
     discovered = []
 
     for sub in subdomains:
-        full_domain = f"{sub}.{target}"
-        print(f"Testing: {full_domain}")
-        if is_alive(full_domain):
-            print(f"[+] Found: {full_domain}")
-            discovered.append(full_domain)
+        subdomain = f"{sub}.{target}"
+        print(f"Checking {subdomain}...")
+        if is_alive(subdomain):
+            discovered.append(subdomain)
+            print(f"{subdomain} is live!")
+        else:
+            print(f"{subdomain} is dead.")
 
     if discovered:
         with open(output_file, "w") as f:
-            json.dump(discovered, f, indent=2)
-        print(f"\n[+] Results saved to {output_file}")
+            json.dump(discovered, f, indent=4)
+        print(f"Discovered subdomains saved to {output_file}")
     else:
-        print("\n[-] No subdomains found.")
+        print("No subdomains were discovered.")
 
 if __name__ == "__main__":
     main()
+
